@@ -1,0 +1,52 @@
+#
+# /******************************************************************************
+#  All rights reserved. All information contained in this software is confidential
+#  and proprietary to opentext. No part of this software may be
+#  reproduced or transmitted in any form or any means, electronic, mechanical,
+#  photocopying, recording or otherwise stored in any retrieval system of any
+#  nature without the prior written permission of opentext.
+#  This material is a trade secret and its confidentiality is strictly maintained.
+#  Use of any copyright notice does not imply unrestricted public access to this
+#  material.
+#
+#  (c) opentext
+#
+#  *******************************************************************************
+#  Change Log:
+#  Date          Name                Defect#           Description
+#  -------------------------------------------------------------------------------
+#  01/30/2020    Pavan                              Initial Creation
+#  ******************************************************************************/
+#
+server:
+#  ssl:
+#    key-store-type: PKCS12
+#    key-store: C:\ProgramData\chocolatey\lib\mkcert\tools\localhost+2.p12
+#    key-store-password: changeit
+
+  http2:
+    enabled: true
+  port: 8080
+  servlet:
+    context-path: /supportgrid-portal
+
+ACCESS_CODE: p1414r01816
+COOKIE_SECURE: false
+COOKIE_DOMAIN: .bp-paas.otxlab.net
+#COOKIE_DOMAIN: localhost
+COOKIE_NAME: SG-Gateway-DEV-JWTCookie
+CLIENT_ID: b38a7f70b507c0fb6f18ad745b18ba14
+CLIENT_NAME: supportgrid-portal
+CLIENT_SECRET: c24ead34cc8bc38478829ff24da3fb509391d98b63e6bf33a138224996c3fd2ae8d15d820b1b051515cdc907b802a7a8ad312aa55a4c44d3b674a861bb27717e2792f361524aef0dab5de30a83a091ca
+AUTHZ_SERVER_URL: http://supportgridauthzserver-dev.fulcrum.cfcr-lab.bp-paas.otxlab.net/supportgrid-authz-server/
+#AUTHZ_SERVER_URL: http://localhost:8081/supportgrid-authz-server/
+GATEWAY_URL: http://supportgrid-dev.fulcrum.cfcr-lab.bp-paas.otxlab.net/
+#GATEWAY_URL: http://localhost:8888/
+
+
+jdbc.url: jdbc:oracle:thin:@bp2-vdb01-q001.otxlab.net:1521/SG
+jdbc.className: oracle.jdbc.OracleDriver
+jdbc.username: SG
+jdbc.password: SG
+
+CHANGE_PWD_URL: https://reset.idldap.net/

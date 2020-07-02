@@ -1,0 +1,12 @@
+syntax: glob
+.idea/*
+target/*
+portal/dist/*
+portal/node_modules/*
+portal/e2e/*
+webbuild/*
+.mvn/*
+mvnw.cmd
+mvnw
+package-lock.json
+SupportGrid-Portal.iml

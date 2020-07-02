@@ -1,0 +1,209 @@
+#
+# /******************************************************************************
+#  All rights reserved. All information contained in this software is confidential
+#  and proprietary to opentext. No part of this software may be
+#  reproduced or transmitted in any form or any means, electronic, mechanical,
+#  photocopying, recording or otherwise stored in any retrieval system of any
+#  nature without the prior written permission of opentext.
+#  This material is a trade secret and its confidentiality is strictly maintained.
+#  Use of any copyright notice does not imply unrestricted public access to this
+#  material.
+#
+#  (c) opentext
+#
+#  *******************************************************************************
+#  Change Log:
+#  Date          Name                Defect#           Description
+#  -------------------------------------------------------------------------------
+#  01/30/2020    Pavan                              Initial Creation
+#  ******************************************************************************/
+#
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: supportgrid-portal
+  name: supportgrid-portal
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: supportgrid-portal
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: supportgrid-portal
+  name: supportgrid-portal
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: supportgrid-portal
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: supportgrid-portal
+    spec:
+      containers:
+      - image: artifactory.otxlab.net/ot2-paas-dev/supportgrid-portal:latest
+        imagePullPolicy: Always
+        name: supportgrid-portal
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        env:
+        - name: supportgrid-portal_CUSTOM_CONFIGURATION_1
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: supportgrid-portal_CUSTOM_CONFIGURATION_1
+        - name: supportgrid-portal_CUSTOM_CONFIGURATION_2
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: supportgrid-portal_CUSTOM_CONFIGURATION_2
+        - name: cookie_domain
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: cookie_domain
+        - name: cookie_name
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: cookie_name
+        - name: AUTZ_SERVER_URL
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: AUTZ_SERVER_URL
+        - name: database_url
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: database_url
+        - name: db_user
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: db_user
+        - name: db_pwd
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: db_pwd
+        - name: COOKIE_SECURE
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: COOKIE_SECURE
+        - name: CLIENT_ID
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: CLIENT_ID
+        - name: CLIENT_SECRET
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: CLIENT_SECRET
+        - name: GATEWAY_URL
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: GATEWAY_URL
+        - name: CHANGE_PWD_URL
+          valueFrom:
+            configMapKeyRef:
+              name: supportgrid-portal
+              key: CHANGE_PWD_URL
+          # Begin New Relic setup
+        - name: ENV
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: ENV
+        - name: PLATFORM
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: PLATFORM
+        - name: CELL
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: CELL
+        - name: ZONE
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: ZONE
+        - name: DC
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: DC
+        - name: BU
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: BU
+        - name: NEW_RELIC_LICENSE_KEY
+          valueFrom:
+            secretKeyRef:
+              name: new-relic
+              key: NEW_RELIC_LICENSE_KEY
+        - name: NEW_RELIC_DISTRIBUTED_TRACING_ENABLED
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: NEW_RELIC_DISTRIBUTED_TRACING_ENABLED
+        - name: NEW_RELIC_LOG_FILE_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: NEW_RELIC_LOG_FILE_NAME
+        - name: NEW_RELIC_LOG_LEVEL
+          value: "warn"
+        - name: NEW_RELIC_MAX_STACK_TRACE_LINES
+          value: "100"
+        - name: NEW_RELIC_SEND_DATA_ON_EXIT
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: NEW_RELIC_SEND_DATA_ON_EXIT
+        - name: NEW_RELIC_PROXY_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: NEW_RELIC_PROXY_HOST
+        - name: NEW_RELIC_PROXY_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: new-relic
+              key: NEW_RELIC_PROXY_PORT
+        - name: NEW_RELIC_PROXY_USER
+          valueFrom:
+            secretKeyRef:
+              name: new-relic
+              key: NEW_RELIC_PROXY_USER
+        - name: NEW_RELIC_PROXY_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: new-relic
+              key: NEW_RELIC_PROXY_PASSWORD
+        - name: NEW_RELIC_APP_NAME
+          value: "SGPORTAL-$(ENV)-$(PLATFORM)_$(CELL)_$(ZONE)_$(DC)-$(BU)"

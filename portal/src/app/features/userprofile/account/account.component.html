@@ -1,0 +1,127 @@
+<div class="portal-account-wrapper">
+  <div class="ot-row">
+    <div class="account-left-usr-meta">
+      <div class="user-name-heading">
+        <div class="portal-user-profile-usrname">
+          {{userName}}
+        </div>
+        <!-- <div class="portal-user-profile-usrid">
+          {{'userprofile.userID'| translate}} {{userLoginID}}
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="ot-row">
+    <div class="ot-col-sm-3 ot-col-md-3 ot-col-lg-3 ot-col-xl-3">
+      <div class="account-left-usr-meta">
+        <!-- <div class="portal-user-profile-grp-text portal-user-profile-grey-txt">{{'userprofile.account.created'| translate}}
+          {{userCreatedDate}}</div> -->
+        <!-- <div class="portal-user-profile-grp-text portal-user-profile-grey-txt">{{'userprofile.account.lastLogon'| translate}}
+          {{userLastLogin}}</div> -->
+        <div class="portal-acct-side-link">
+          <a (click)="updatePassword()">{{'userprofile.password.change.label'| translate}}</a>
+        </div>
+
+        <div class="portal-acct-side-link">
+          <div class="portal-roleHeading">
+            {{'userprofile.account.userRoles'| translate}}
+          </div>
+          <div id="roleList" *ngFor="let role of userRoles">
+            <div class="portal-roleLink" [ngClass]="NEO_TGO_DEF == role.roleName ? 'disabled':''">
+              {{role.roleDisplayName}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ot-col-sm-9 ot-col-md-9 ot-col-lg-9 ot-col-xl-9">
+      <div class="account-rigth-usr-info">
+        <form [formGroup]="rForm">
+          <div id="usr-form" class="collapse in">
+            <div class="ot-row">
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label
+                    class="ot-form-control-label portal-label-inline">{{'formFields.firstName' | translate}}</label>
+                  <input type="text" tabindex="1"
+                    formControlName="firstName" maxlength="50" disabled>
+                  <!--
+                     [ngClass]="!rForm.controls['firstName'].valid && rForm.controls['firstName'].touched ? 'ot-error':'ot-text nonEdit'"
+                    <div *ngIf="!rForm.controls['firstName'].valid && rForm.controls['firstName'].touched">
+                    <span class="ot-error">{{'validationMessages.firstName.required'|translate}}</span>
+                  </div> -->
+                </div>
+
+              </div>
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label
+                    class="ot-form-control-label portal-label-inline">{{'formFields.lastName' | translate}}</label>
+                  <input type="text" tabindex="2"
+                    formControlName="lastName" maxlength="50" disabled>
+                  <!--
+                      [ngClass]="!rForm.controls['lastName'].valid && rForm.controls['lastName'].touched ? 'ot-error':'ot-text'"
+                    <div *ngIf="!rForm.controls['lastName'].valid && rForm.controls['lastName'].touched">
+                    <span class="ot-error">{{'validationMessages.lastName.required'|translate}}</span>
+                  </div> -->
+                </div>
+              </div>
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label style="display: inline;"
+                    class="ot-form-control-label portal-label-inline">{{'formFields.Email' | translate}}</label>&nbsp;
+                  <!--ot-fa ot-fa-info-circle -->
+                  <input type="text" tabindex="3"
+                    formControlName="email" maxlength="50" disabled>
+                  <!--
+                     [ngClass]="!rForm.controls['email'].valid && rForm.controls['email'].touched ? 'ot-error':'ot-text'"
+                      <div
+                    *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched && rForm.controls['email'].errors && rForm.controls['email'].errors.required ">
+                    <div class="ot-error">{{'validationMessages.email.required'|translate}}</div>
+                  </div> -->
+                  <!-- <div
+                    *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched && rForm.controls['email'].errors && rForm.controls['email'].errors.pattern ">
+                    <div class="ot-error">{{'validationMessages.email.pattern'|translate}}</div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="ot-row">
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label ">{{'formFields.addLine1' | translate}}</label>
+                  <input type="text" tabindex="4"
+                    [ngClass]="!rForm.controls['addressLine1'].valid && rForm.controls['addressLine1'].touched ? 'ot-error':'ot-text'"
+                    formControlName="addressLine1" maxlength="75">
+                  <div *ngIf="!rForm.controls['addressLine1'].valid && rForm.controls['addressLine1'].touched">
+                    <div class="ot-error">{{'validationMessages.addressLine1.required'|translate}}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label">{{'formFields.addLine2' | translate}}</label>
+                  <input type="text" tabindex="5" formControlName="addressLine2" maxlength="75">
+                </div>
+              </div>
+
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label">{{'formFields.City' | translate}}</label>
+                  <input type="text" tabindex="6"
+                    [ngClass]="!rForm.controls['city'].valid && rForm.controls['city'].touched ? 'ot-error':'ot-text'"
+                    formControlName="city" maxlength="50">
+                  <div *ngIf="!rForm.controls['city'].valid && rForm.controls['city'].touched">
+                    <div class="ot-error">{{'validationMessages.city.required'|translate}}</div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

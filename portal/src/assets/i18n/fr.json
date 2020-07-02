@@ -1,0 +1,198 @@
+{
+  "common": {
+    "project.title": "Project Neo",
+    "submit.title": "Soumettre",
+    "errorMessage": "La requête n’a pas pu être traitée. Veuillez contacter le support de GXS.",
+    "pageNotFound": "Page introuvable. Veuillez contacter le support d'OpenText.",
+    "search": "Rechercher",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "submit": "Soumettre",
+    "close": "Fermer",
+    "refresh": "Actualiser"
+  },
+  "gpdMetric": {
+    "header": "Répertoire des partenaires mondiaux",
+    "partnerInGPD": "Partenaires dans GPD",
+    "partnerInYourHub": "Partenaires dans votre communauté",
+    "partnerAddedLastMonth": "Partenaires ajoutés le mois dernier"
+  },
+  "header": {
+    "title": "Trading Grid Online",
+    "signout": "Se déconnecter"
+  },
+  "body": {
+    "welcome": "Bienvenue,",
+    "tileErrorMessage": "Impossible d'afficher le contenu.\nVeuillez contacter le support pour assistance."
+  },
+  "logout": {
+    "signout": "Se déconnecter",
+    "confirmation.message": "Souhaitez-vous vous déconnecter de TGO ?",
+    "confirmation.yes": "Oui",
+    "confirmation.no": "Nº"
+  },
+  "forgotpassword": {
+    "header.title": "Etapes de réinitialisation de mot de passe oublié :",
+    "steps.step1": "1. Veuillez saisir votre nom d'utilisateur",
+    "steps.step2": "2. Vous serez ensuite invité à répondre à vos deux questions de sécurité",
+    "steps.step3": "3. Après avoir correctement répondu aux questions, nous génèrerons un mot de passe temporaire et l'enverrons à l'adresse e-mail correspondant à votre ID.",
+    "questions.title": "Etape de réinitialisation de mot de passe oublié 1 sur 3 :",
+    "questions.username": "Nom d'utilisateur :",
+    "questions.note": "Veuillez répondre aux questions suivantes pour nous permettre de générer un mot de passe temporaire",
+    "questions.step2": "Étape de réinitialisation de mot de passe oublié 2 sur 3 :",
+    "questions.cancel": "Annuler"
+  },
+  "pattern": {
+    "email": "^[\\_A-Za-z0-9\\-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",
+    "emailValidate": "Saisissez une adresse e-mail valide",
+    "phoneValidate": "Saisir un numéro de téléphone valide"
+  },
+  "footer": {
+    "copyRight": "Copyright © {{currentYear}} Open Text. Tous droits réservés."
+  },
+  "formFields": {
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "addLine1": "Adresse 1",
+    "addLine2": "Adresse 2",
+    "CompanyName": "Nom de la société",
+    "Email": "Adresse électronique",
+    "City": "Ville",
+    "State": "État/Province/Région",
+    "Phone": "Téléphone",
+    "Mobile": "Téléphone mobile",
+    "PostalCode": "Code postal",
+    "Country": "Pays",
+    "Fax": "Fax",
+    "Alternate": "Autre",
+    "UserId": "ID d’utilisateur",
+    "password": "Mot de passe",
+    "confPaswd": "Confirmer le mot de passe",
+    "pwdPolicyHeader": "Votre mot de passe doit répondre aux règles suivantes :",
+    "pwdPolicyLink": "Règles relatives aux mots de passe",
+    "Facebook": "Facebook",
+    "LinkedIn": "LinkedIn",
+    "Twitter": "Twitter",
+    "Other": "Autre",
+    "language": "Langue préférée",
+    "timezone": "Fuseau horaire",
+    "dateFormat": "Format de date",
+    "dayLightSaving": "Appliquer l'heure avancée ?",
+    "isMarketingMaterial": "Je souhaite recevoir la documentation commerciale d'OpenText",
+    "emailNotificationInfo": "L'adresse e-mail sera utilisée pour les notifications du portail et les réinitialisations de mot de passe."
+  },
+  "userprofile": {
+    "title": "Mon profil",
+    "downloads": "Mes téléchargements",
+    "updatepic": "Mettre à jour votre photo",
+    "userID": "ID d’utilisateur",
+    "tab.account": "Compte",
+    "tab.preferences": "Préférences",
+    "account.created": "Créé(e) le",
+    "account.lastLogon": "Dernière connexion",
+    "account.privacyPolicy": "Politique en matière de confidentialité",
+    "account.consentCause": "Clause de consentement",
+    "account.consentCause.helpText": "Je donne mon autorisation pour rendre mes informations de contact (nom, adresse e-mail, numéro de téléphone) visibles aux partenaires avec lesquels je réalise des transactions via ce site Web.",
+    "account.userRoles": "Rôle(s) utilisateur",
+    "account.preferences": "Préférences",
+    "account.changepassword": "Modifier le mot de passe ou l'ID d'utilisateur",
+    "account.error.postalcode": "Code postal invalide",
+    "account.error.mobile": "Format invalide",
+    "password.disclimar": "Vous pouvez modifier votre ID d'utilisateur et/ou mot de passe. Veuillez saisir votre mot de passe actuel pour poursuivre.",
+    "password.current.label": "Saisir le mot de passe actuel",
+    "password.change.label": "Modifier le mot de passe",
+    "password.new.label": "Nouveau mot de passe",
+    "password.reenter.label": "Saisir à nouveau le nouveau mot de passe",
+    "password.change.user.label": "Modifier l'ID d'utilisateur",
+    "password.current.user.label": "Nouvel ID d'utilisateur",
+    "password.new.user.label": "Saisir à nouveau le nouvel ID d'utilisateur",
+    "password.update.success.title": "Utilisateur correctement mis à jour",
+    "password.update.success.details": "Vous serez déconnecté une fois votre mot de passe correctement mis à jour",
+    "password.validate.invalid.title": "Mot de passe incorrect",
+    "userId.update.success.title": "Utilisateur correctement mis à jour",
+    "userId.update.success.details": "Vous serez déconnecté une fois votre ID d'utilisateur correctement mis à jour",
+    "userId.update.invalid.title": "ID d'utilisateur invalide",
+    "userId.update.invalid.details": "L'ID d'utilisateur est invalide"
+  },
+  "downloads": {
+    "title": "Mes téléchargements",
+    "requestId": "Demander un ID",
+    "exportContext": "Description",
+    "totalRecords": "Nombre total de dossiers",
+    "status": "Statut",
+    "createdTimeStamp": "Données requises",
+    "download": "Télécharger",
+    "expiryDate": "Date d’expiration"
+  },
+  "menu": {
+    "applications": "Applications",
+    "jump": "Aller à",
+    "help": "Aide",
+    "privacy": "Politique en matière de confidentialité",
+    "contactus": "Nous contacter"
+  },
+  "notification": {
+    "markAsRead": "Marquer comme lu",
+    "markAsUnread": "Marquer comme non lu",
+    "delete": "Supprimer",
+    "emptyMessage": "Vous n'avez pas de messages.",
+    "msgDetails": "Informations sur le message"
+  },
+  "responseMessage": {
+    "userPswdUpdatedSuccess": "Vous serez déconnecté une fois que votre mot de passe a été correctement mis à jour.",
+    "usrUpdatedSuccess": "Utilisateur correctement mis à jour",
+    "severityError": "Erreur",
+    "severitySuccuss": "Succès !"
+  },
+  "validationMessages": {
+    "userLoginId": {
+      "required": "L'ID d'utilisateur est requis",
+      "exists": "L'ID d'utilisateur existe déjà dans le système",
+      "pattern": "L'ID d'utilisateur est invalide",
+      "notMatched": "L'ID d'utilisateur ne correspond pas",
+      "pswdMatched": "L'ID d'utilisateur et le mot de passe ne peuvent pas être le même"
+    },
+    "password": {
+      "required": "Le mot de passe est requis",
+      "notMatched": "Le mot de passe ne correspond pas",
+      "pswdPolicy": "Le mot de passe saisi n'est pas conforme aux règles relatives aux mots de passe"
+    },
+    "confirmPassword": {
+      "required": "La confirmation du mot de passe est requise"
+    },
+    "firstName": {
+      "required": "Le prénom est requis"
+    },
+    "lastName": {
+      "required": "Le nom est requis"
+    },
+    "companyName": {
+      "required": "Le nom de la société est requis."
+    },
+    "email": {
+      "required": "L'adresse e-mail est requise",
+      "pattern": "L'adresse e-mail est invalide"
+    },
+    "country": {
+      "required": "Le pays est requis"
+    },
+    "phone": {
+      "required": "Le numéro de téléphone est requis"
+    },
+    "languageCode": {
+      "required": "La langue est requise"
+    },
+    "timeZoneCode": {
+      "required": "Le fuseau horaire est requis"
+    },
+    "addressLine1": {
+      "required": "La ligne d'adresse 1 est requise"
+    },
+    "state": {
+      "required": "L’État est requis"
+    },
+    "postalcode": {
+      "required": "Le code postal est requis"
+    }
+  }
+}

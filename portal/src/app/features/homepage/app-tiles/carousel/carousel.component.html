@@ -1,0 +1,15 @@
+<div class="portal-crousel-wrapper">
+      <div class="portal-welcome-hero" #welcomeBanner>
+        <span class="portal-welcome-span">
+          <div class="portal-heading">{{'body.welcome' | translate}}   {{additionalData?.userName}}</div>
+        </span>
+        <div>
+          <div class="portal-heading" *ngIf="!showToolTip">
+            <div class="portal-heading">{{'body.supportgrid' | translate}}</div>
+          </div>
+          <div class="portal-heading" *ngIf="showToolTip" tooltip="{{additionalData?.userName}}" class="portal-welcome-tile-text-overflow">
+            <div class="portal-heading">{{'body.supportgrid' | translate}}</div>
+          </div>
+          </div>
+      </div>
+</div>

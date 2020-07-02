@@ -1,0 +1,24 @@
+<div [ngClass]="tileContent.displaySrc ? 'portal-tile-content ot-background-white' : 'portal-tile-content-blank'"
+  [perfectScrollbar]="scrollConfig" (click)="handleOnClick()">
+  <div *ngIf="!contentLoaded" class="custom-loader-container">
+    <div class="loader"></div>
+  </div>
+  <ng-container *ngFor="let element of tileContentDetails?.elements let i=index">
+    <div *ngIf="!element.children" (click)="clickUrl(element)" tabindex="0" class="portal-tile-content-item">
+      <div class="portal-tile-content-label">
+        <a>
+          <span>{{element.displayText}}</span>
+        </a>
+      </div>
+    </div>
+    <ot-tile-accordion *ngIf="element.children" [displayText]="element.displayText" [children]="element.children">
+    </ot-tile-accordion>
+  </ng-container>
+  <div *ngIf="contentLoaded && serviceError">
+    <span class="portal-tile-error">{{'body.tileErrorMessage'| translate}}</span>
+  </div>
+  <div  [style.height.%]="100"  *ngIf="!tileContent.displaySrc && !!tileContent.iconImageSrc">
+    <div class="portal-tile-folder" [ngStyle]="{background: 'url(' + tileContent.iconImageSrc + ') no-repeat'}"></div>
+  </div>
+
+</div>

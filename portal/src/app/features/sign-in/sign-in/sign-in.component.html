@@ -1,0 +1,37 @@
+<span *ngIf="errmsg" class="login-error login-mx-auto login-text-wrapper">
+    <span class="login-error-message-icon"></span>
+    <div class="login-error-message-container">
+        <span class="login-error-message">{{errmsg | translate}}</span>
+    </div>
+</span>
+<div class="login-relogin-instruction">{{reloginsubmsg | translate}} </div>
+<div class="login-mx-auto" [ngClass]="{'login-pt-2':!errmsg}">
+    <form ngNoForm method="POST" (submit)="login(user)" id="signinform" target="_top">
+        <div>
+            <div class="login-text-wrapper">
+                <input id="userid" name="userid" type="text" class="login-input-default"
+                    [ngClass]="{'login-input-user-data': (user.userid!=null && user.userid != ''), 'login-input-error': authFailed && !user.userid }"
+                    placeholder="{{'signin.username'| translate}}" autofocus autocomplete="off"
+                    [(ngModel)]="user.userid" #userid="ngModel">
+                <span id="username_clearer"
+                    [ngClass]="{'login-d-block ' : (user.userid!=null && user.userid != '') || (authFailed && userid.pristine), 'login-input-error-icon' : authFailed && !user.userid, 'login-input-clear-icon' : user.userid != null }"
+                    (click)="user.userid = null"></span>
+            </div>
+        </div>
+        <div>
+            <div class="login-text-wrapper">
+                <input id="password" [otBlockCutCopyPaste]="true" name="password" type="password"
+                    class="login-input-default" placeholder="{{'signin.password'| translate}}" autocomplete="off"
+                    [(ngModel)]="user.password" #password="ngModel"
+                    [ngClass]="{'login-input-user-data': (user.password!=null && user.password != ''), 'login-input-error': authFailed && !user.password}">
+                <span id="password_clearer"
+                    [ngClass]="{'login-d-block ' : ( user.password!=null && user.password != '')|| (authFailed && password.pristine), 'login-input-error-icon' : authFailed && !user.password, 'login-input-clear-icon' : user.password != null }"
+                    (click)="user.password = null"></span>
+            </div>
+        </div>
+
+        <button id="submit"  type="submit"  class="login-button-state-disabled" [ngClass]="{'login-button-state-enabled':isEnabled()}"
+            [disabled]="!isEnabled()">
+            {{'signin.sign'| translate}}</button>
+    </form>
+</div>

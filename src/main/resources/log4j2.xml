@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR" name="app-log" packages="">
+	<Properties>
+		<Property name="spring.log.level">ERROR</Property>
+		<Property name="app.log.level">INFO</Property>
+		<Property name="default.log.level">ERROR</Property>
+		<Property name="log_path">./sg-portal.log</Property>
+		<Property name="file.message.pattern">%d{yyy-MM-dd HH:mm:ss,SSS zzz} [%t] %-5level %logger - %msg%n</Property>
+		<Property name="log.max.size">10 MB</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="file" fileName="${sys:log_path}"
+			filePattern="${sys:log_path}/$${date:yyyy-MM}/login-%d{MM-dd-yyyy}-%i.log.gz">
+			<JsonLayout
+					complete="false"
+					compact="true"
+					eventEol="true">
+				<KeyValuePair key="@timestamp" value="$${date:yyyy-MM-dd'T'HH:mm:ss.SSSX}"/>
+				<KeyValuePair key="serviceCode" value="SG"/>
+				<KeyValuePair key="componentCode" value="SG-PORTAL"/>
+			</JsonLayout>
+			<Policies>				
+				<SizeBasedTriggeringPolicy size="${sys:log.max.size}" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="org.springframework" level="${sys:spring.log.level}"
+			additivity="false">
+			<AppenderRef ref="file" />
+		</Logger>
+		<Logger name="com.ot.portal" level="${sys:app.log.level}" additivity="false">
+			<AppenderRef ref="file" />
+		</Logger>
+		<Root level="${sys:default.log.level}">
+			<AppenderRef ref="file" />
+		</Root>
+	</Loggers>
+</Configuration>

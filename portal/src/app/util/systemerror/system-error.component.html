@@ -1,0 +1,6 @@
+<div class="form-container ot-background-white portal-error-page">
+    <span *ngIf="pageNotFound; else elseBlock">{{'common.pageNotFound'| translate}}</span>
+    <ng-template #elseBlock>
+    <span>{{'common.errorMessage'| translate}}</span>
+    </ng-template>
+</div>

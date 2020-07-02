@@ -1,0 +1,47 @@
+#
+# /******************************************************************************
+#  All rights reserved. All information contained in this software is confidential
+#  and proprietary to opentext. No part of this software may be
+#  reproduced or transmitted in any form or any means, electronic, mechanical,
+#  photocopying, recording or otherwise stored in any retrieval system of any
+#  nature without the prior written permission of opentext.
+#  This material is a trade secret and its confidentiality is strictly maintained.
+#  Use of any copyright notice does not imply unrestricted public access to this
+#  material.
+#
+#  (c) opentext
+#
+#  *******************************************************************************
+#  Change Log:
+#  Date          Name                Defect#           Description
+#  -------------------------------------------------------------------------------
+#  01/30/2020    Pavan                              Initial Creation
+#  ******************************************************************************/
+#
+server:
+  http2:
+    enabled: true
+  port: 8080
+  servlet:
+    context-path: /supportgrid-portal
+
+
+ACCESS_CODE: p1414r01816
+COOKIE_SECURE: ${COOKIE_SECURE}
+COOKIE_DOMAIN: ${cookie_domain}
+COOKIE_NAME: ${cookie_name}
+CLIENT_ID: ${CLIENT_ID}
+CLIENT_NAME: supportgrid-portal
+CLIENT_SECRET: ${CLIENT_SECRET}
+AUTHZ_SERVER_URL: ${AUTZ_SERVER_URL}
+GATEWAY_URL: ${GATEWAY_URL}
+
+
+
+jdbc.url: ${database_url}
+jdbc.className: oracle.jdbc.OracleDriver
+jdbc.username: ${db_user}
+jdbc.password: ${db_pwd}
+
+CHANGE_PWD_URL: ${CHANGE_PWD_URL}
+

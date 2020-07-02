@@ -1,0 +1,198 @@
+{
+  "common": {
+    "project.title": "Project Neo",
+    "submit.title": "Enviar",
+    "errorMessage": "Não foi possível processar a solicitação. Contate o suporte da GXS.",
+    "pageNotFound": "Página não encontrada. Entre em contato com o suporte da OpenText.",
+    "search": "Pesquisar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "submit": "Enviar",
+    "close": "Fechar",
+    "refresh": "Atualizar"
+  },
+  "gpdMetric": {
+    "header": "Diretório global de parceiros",
+    "partnerInGPD": "Parceiros no GPD",
+    "partnerInYourHub": "Parceiros na sua comunidade",
+    "partnerAddedLastMonth": "Parceiros adicionados mês passado"
+  },
+  "header": {
+    "title": "Trading Grid Online",
+    "signout": "Sair"
+  },
+  "body": {
+    "welcome": "Boas-vindas,",
+    "tileErrorMessage": "Não é possível exibir o conteúdo.\nEntre em contato com o suporte para obter ajuda."
+  },
+  "logout": {
+    "signout": "Sair",
+    "confirmation.message": "Deseja sair do TGO?",
+    "confirmation.yes": "Sim",
+    "confirmation.no": "Não"
+  },
+  "forgotpassword": {
+    "header.title": "Etapas de redefinição de senha esquecida:",
+    "steps.step1": "1. Digite seu nome de usuário",
+    "steps.step2": "2. Será solicitado que você responda a duas perguntas de segurança",
+    "steps.step3": "3. Depois que você responder às perguntas corretamente, geraremos uma senha temporária para você e a enviaremos por e-mail para seu ID.",
+    "questions.title": "Etapa 1 de 3 de redefinição de senha esquecida:",
+    "questions.username": "Nome de usuário:",
+    "questions.note": "Responda às perguntas abaixo para permitir a geração de uma senha temporária para você",
+    "questions.step2": "Etapa 2 de 3 de redefinição de senha esquecida:",
+    "questions.cancel": "Cancelar"
+  },
+  "pattern": {
+    "email": "^[\\_A-Za-z0-9\\-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",
+    "emailValidate": "Digite um endereço de e-mail válido",
+    "phoneValidate": "Digite um número de telefone válido"
+  },
+  "footer": {
+    "copyRight": "Copyright © {{currentYear}} OpenText. Todos os direitos reservados."
+  },
+  "formFields": {
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "addLine1": "Linha de endereço 1",
+    "addLine2": "Linha de endereço 2",
+    "CompanyName": "Nome da empresa",
+    "Email": "Endereço de e-mail",
+    "City": "Cidade",
+    "State": "Estado/Município/Região",
+    "Phone": "Telefone",
+    "Mobile": "Móvel",
+    "PostalCode": "CEP",
+    "Country": "País",
+    "Fax": "Fax",
+    "Alternate": "Alternar",
+    "UserId": "ID do usuário",
+    "password": "Senha",
+    "confPaswd": "Confirmar senha",
+    "pwdPolicyHeader": "A senha deve refletir as seguintes regras:",
+    "pwdPolicyLink": "Diretiva de senha",
+    "Facebook": "Facebook",
+    "LinkedIn": "LinkedIn",
+    "Twitter": "Twitter",
+    "Other": "Outro",
+    "language": "Idioma preferido",
+    "timezone": "Fuso Horário",
+    "dateFormat": "Formato de data",
+    "dayLightSaving": "Seguir o horário de verão?",
+    "isMarketingMaterial": "Desejo receber materiais de marketing da OpenText",
+    "emailNotificationInfo": "O endereço de e-mail será usado para notificações do portal e redefinições de senha."
+  },
+  "userprofile": {
+    "title": "Meu perfil",
+    "downloads": "Meus downloads",
+    "updatepic": "Atualize sua foto",
+    "userID": "ID do usuário",
+    "tab.account": "Conta",
+    "tab.preferences": "Preferências",
+    "account.created": "Criado em",
+    "account.lastLogon": "Último login",
+    "account.privacyPolicy": "Política de privacidade",
+    "account.consentCause": "Cláusula de consentimento",
+    "account.consentCause.helpText": "Ofereço permissão para tornar minhas informações de contato (nome, e-mail, telefone) visíveis aos parceiros com quem realizo transações neste site.",
+    "account.userRoles": "Funções de usuário",
+    "account.preferences": "Preferências",
+    "account.changepassword": "Alterar senha ou ID de usuário",
+    "account.error.postalcode": "Código postal inválido",
+    "account.error.mobile": "Formato inválido",
+    "password.disclimar": "Você pode alterar seu ID de usuário, sua senha ou ambos. Digite sua senha atual para continuar.",
+    "password.current.label": "Digitar senha atual",
+    "password.change.label": "Alterar senha",
+    "password.new.label": "Nova senha",
+    "password.reenter.label": "Digitar nova senha novamente",
+    "password.change.user.label": "Alterar ID de usuário",
+    "password.current.user.label": "Novo ID de usuário",
+    "password.new.user.label": "Digitar novo ID de usuário novamente",
+    "password.update.success.title": "Usuário atualizado com sucesso",
+    "password.update.success.details": "Você será desconectado quando a senha for atualizada com sucesso",
+    "password.validate.invalid.title": "Senha incorreta",
+    "userId.update.success.title": "Usuário atualizado com sucesso",
+    "userId.update.success.details": "Você será desconectado quando o ID de usuário for atualizado com sucesso",
+    "userId.update.invalid.title": "ID de usuário inválido",
+    "userId.update.invalid.details": "ID de usuário inválido"
+  },
+  "downloads": {
+    "title": "Meus downloads",
+    "requestId": "ID da solicitação",
+    "exportContext": "Descrição",
+    "totalRecords": "Registros totais",
+    "status": "Status",
+    "createdTimeStamp": "Data solicitada",
+    "download": "Baixar",
+    "expiryDate": "Data de vencimento"
+  },
+  "menu": {
+    "applications": "Aplicativos",
+    "jump": "Pular para",
+    "help": "Ajuda",
+    "privacy": "Política de privacidade",
+    "contactus": "Contato"
+  },
+  "notification": {
+    "markAsRead": "Marcar como lido",
+    "markAsUnread": "Marcar como não lido",
+    "delete": "Excluir",
+    "emptyMessage": "Você não tem mensagens.",
+    "msgDetails": "Detalhes da mensagem"
+  },
+  "responseMessage": {
+    "userPswdUpdatedSuccess": "Você será desconectado quando a senha for atualizada com sucesso.",
+    "usrUpdatedSuccess": "Usuário atualizado com sucesso",
+    "severityError": "Erro",
+    "severitySuccuss": "Êxito"
+  },
+  "validationMessages": {
+    "userLoginId": {
+      "required": "ID de usuário é obrigatório",
+      "exists": "ID de usuário já existe no sistema",
+      "pattern": "ID de usuário é inválido",
+      "notMatched": "ID de usuário não corresponde",
+      "pswdMatched": "O ID de usuário e a senha não podem ser iguais"
+    },
+    "password": {
+      "required": "Senha é obrigatório",
+      "notMatched": "Senhas não correspondem",
+      "pswdPolicy": "A senha digitada não está de acordo com a política de senhas"
+    },
+    "confirmPassword": {
+      "required": "Confirmar senha é obrigatório"
+    },
+    "firstName": {
+      "required": "O nome é obrigatório"
+    },
+    "lastName": {
+      "required": "O sobrenome é obrigatório"
+    },
+    "companyName": {
+      "required": "Nome da empresa é obrigatório"
+    },
+    "email": {
+      "required": "E-mail é obrigatório",
+      "pattern": "E-mail é inválido"
+    },
+    "country": {
+      "required": "País é obrigatório"
+    },
+    "phone": {
+      "required": "Telefone é obrigatório"
+    },
+    "languageCode": {
+      "required": "Idioma é obrigatório"
+    },
+    "timeZoneCode": {
+      "required": "Fuso horário é obrigatório"
+    },
+    "addressLine1": {
+      "required": "Linha de endereço 1 é obrigatória"
+    },
+    "state": {
+      "required": "Estado é obrigatório"
+    },
+    "postalcode": {
+      "required": "Código postal é obrigatório"
+    }
+  }
+}

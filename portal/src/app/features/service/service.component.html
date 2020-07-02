@@ -1,0 +1,18 @@
+<div class="{{isIframe==true?'portal-form-container-vh':'portal-form-container-perc'}}">
+  <div class="portal-myprofile-container portal-modal-background" style="height: 36em;">
+    <div class="ot-row">
+      <div class="ot-col-xs-11 ot-col-sm-11 ot-col-md-11 ot-col-lg-11">
+        <div class="ot-tab-content-container">
+          <add-service></add-service>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portal-panel-footer">
+    <div class="portal-panel-footer-button">
+      <button type="button" [disabled]="saveBtnStatus" [ngClass]="saveBtnStatus ? 'ot-secondary' : 'ot-primary'"
+              (click)="saveService()">{{'common.save'| translate}}</button>
+      <button type="button" (click)="closeModal()" class="ot-secondary">{{'common.cancel'| translate}}</button>
+    </div>
+  </div>
+</div>

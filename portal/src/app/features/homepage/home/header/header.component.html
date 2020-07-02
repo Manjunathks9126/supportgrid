@@ -1,0 +1,31 @@
+<ot-homepage-header>
+  <ng-container profileLinks>
+    <li>
+      <a  tabindex="-1"  (click)="showUserProfile()">
+        {{'userprofile.title'| translate}}</a>
+    </li>
+    <li class="ot-divider"></li>
+    <li>
+      <a tabindex="-1" (click)="signout()">{{'header.signout'| translate}}</a>
+    </li>
+  </ng-container>
+</ot-homepage-header>
+
+<ot-dialoguebox header="{{'header.signout'| translate}}" iconClass="ot-warning-icon" name="signout" [style]="{'color': '#333'}"
+  acceptButton="{{'header.signout'| translate}}" rejectButton="{{'common.cancel' | translate}}">
+  <div dialog-message>
+    {{'logout.confirmation.message'| translate}}
+  </div>
+</ot-dialoguebox>
+
+ <div class="ot-ux-content-container">
+  <ot-modal [visible]="showProfileModal" size="lg">
+    <div style="height:100%">
+    <div class="ot-modal-header">
+        <div class="portal-header-text">{{'userprofile.title'| translate}}</div>
+        <div (click)="showProfileModal=false" class="ot-modal-close-icon ot-ui-pull-right" tooltip="{{'common.close'| translate}}"></div>
+    </div>
+      <user-profile isIframe=false></user-profile>
+    </div>
+  </ot-modal>
+</div>

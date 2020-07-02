@@ -1,0 +1,5 @@
+<div id="{{tile.serviceInstanceId}}" [ngClass]="colorIndex>=0 ? 'portal-group-content-'+colorIndex%noofcolors : ''" class="portal-tile-wrapper">
+  <ot-tile-header [tileHeader]="tile.header" [hasContent]="tile.content?.displaySrc" (onTileClick)="handleOnClick(tile)" ></ot-tile-header>
+  <ot-tile-content [tileContent]="tile.content" [hasContent]="tile.content?.displaySrc" (onTileClick)="handleOnClick(tile)"></ot-tile-content>
+  <ot-tile-footer [tileFooter]="tile.footer"></ot-tile-footer>
+</div>

@@ -1,0 +1,16 @@
+<div class="portal-tile-perspective">
+  <div class="ot-container-fluid">
+    <div class="ot-row ">
+        <div class="ot-col-xs-12 ot-col-sm-12 ot-col-md-8 ot-col-lg-6 ot-col-xl-4" >
+            <ot-tile-carousel [additionalData]="additionalData"></ot-tile-carousel>
+          </div>
+      <!-- <div [dragula]='"drag-container"'> -->
+        <div>
+        <div *ngFor="let tile of tiles; let i = index; " id="{{tile.serviceInstanceId}}"
+        class="ot-col-xs-12 ot-col-sm-6  ot-col-md-4 ot-col-lg-3 ot-col-xl-4" name="tiles-drg">
+          <ot-tile [tile]="tile" [colorIndex]="getColorIndex(tile.content,i)"></ot-tile>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

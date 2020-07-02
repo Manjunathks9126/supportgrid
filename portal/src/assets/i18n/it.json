@@ -1,0 +1,198 @@
+{
+  "common": {
+    "project.title": "Project Neo",
+    "submit.title": "Invia",
+    "errorMessage": "Impossibile elaborare la richiesta. Contattare l'assistenza GXS.",
+    "pageNotFound": "Pagina non trovata. Contattare l'assistenza OpenText.",
+    "search": "Cerca",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "submit": "Invia",
+    "close": "Chiudi",
+    "refresh": "Aggiorna"
+  },
+  "gpdMetric": {
+    "header": "Elenco partner globali",
+    "partnerInGPD": "Partner in GPD",
+    "partnerInYourHub": "Partner nella tua comunità",
+    "partnerAddedLastMonth": "Partner aggiunti il mese scorso"
+  },
+  "header": {
+    "title": "Trading Grid Online",
+    "signout": "Esci"
+  },
+  "body": {
+    "welcome": "Benvenuti,",
+    "tileErrorMessage": "Impossibile visualizzare il contenuto.\nContattare l'assistenza."
+  },
+  "logout": {
+    "signout": "Esci",
+    "confirmation.message": "Uscire da TGO?",
+    "confirmation.yes": "Sì",
+    "confirmation.no": "No"
+  },
+  "forgotpassword": {
+    "header.title": "Procedura di reimpostazione password dimenticata:",
+    "steps.step1": "1. Immettere il nome utente",
+    "steps.step2": "2. Rispondere alle due domande di sicurezza impostate in precedenza",
+    "steps.step3": "3. Dopo aver risposto correttamente alle domande, creeremo una password temporanea che sarà inviata tramite email all'ID dell'utente.",
+    "questions.title": "Reimpostazione password dimenticata - Passaggio 1 di 3:",
+    "questions.username": "Nome utente:",
+    "questions.note": "Rispondere alle seguenti domande per consentirci di generare una password temporanea",
+    "questions.step2": "Reimpostazione password dimenticata - Passaggio 2 di 3:",
+    "questions.cancel": "Annulla"
+  },
+  "pattern": {
+    "email": "^[\\_A-Za-z0-9\\-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",
+    "emailValidate": "Immettere un indirizzo di posta elettronica valido",
+    "phoneValidate": "Immettere un numero di telefono valido"
+  },
+  "footer": {
+    "copyRight": "Copyright © {{currentYear}} Open Text. Tutti i diritti riservati."
+  },
+  "formFields": {
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "addLine1": "Riga indirizzo 1",
+    "addLine2": "Riga indirizzo 2",
+    "CompanyName": "Nome azienda",
+    "Email": "Indirizzo di posta elettronica",
+    "City": "Città/Paese",
+    "State": "Stato/Provincia/Regione",
+    "Phone": "Telefono",
+    "Mobile": "Cellulare",
+    "PostalCode": "Codice postale",
+    "Country": "Paese",
+    "Fax": "Fax",
+    "Alternate": "Alternativo",
+    "UserId": "ID utente",
+    "password": "Password",
+    "confPaswd": "Conferma password",
+    "pwdPolicyHeader": "La password deve rispettare le seguenti regole:",
+    "pwdPolicyLink": "Criteri di gestione password",
+    "Facebook": "Facebook",
+    "LinkedIn": "LinkedIn",
+    "Twitter": "Twitter",
+    "Other": "Altro",
+    "language": "Lingua preferita",
+    "timezone": "Fuso orario",
+    "dateFormat": "Formato data",
+    "dayLightSaving": "Rispettare l'ora legale?",
+    "isMarketingMaterial": "Vorrei ricevere il materiale di marketing di OpenText",
+    "emailNotificationInfo": "L'indirizzo di posta elettronica verrà utilizzato per le notifiche del portale e per la reimpostazione della password."
+  },
+  "userprofile": {
+    "title": "Profilo personale",
+    "downloads": "I miei download",
+    "updatepic": "Aggiorna foto",
+    "userID": "ID utente",
+    "tab.account": "Account",
+    "tab.preferences": "Preferenze",
+    "account.created": "Data creazione:",
+    "account.lastLogon": "Ultimo accesso",
+    "account.privacyPolicy": "Informativa sulla privacy",
+    "account.consentCause": "Clausola di consenso",
+    "account.consentCause.helpText": "Autorizzo a rendere visibili le mie informazioni di contatto (nome, indirizzo di posta elettronica, telefono) ai partner con i quali eseguo transazioni tramite questo sito Web.",
+    "account.userRoles": "Ruoli utente",
+    "account.preferences": "Preferenze",
+    "account.changepassword": "Modifica password o ID utente",
+    "account.error.postalcode": "Codice postale non valido",
+    "account.error.mobile": "Formato non valido",
+    "password.disclimar": "È possibile modificare ID utente, password o entrambi. Immettere la password attuale per procedere.",
+    "password.current.label": "Immettere la password attuale",
+    "password.change.label": "Modifica password",
+    "password.new.label": "Nuova password",
+    "password.reenter.label": "Reimmettere la password",
+    "password.change.user.label": "Modifica ID utente",
+    "password.current.user.label": "Nuovo ID utente",
+    "password.new.user.label": "Reimmettere il nuovo ID utente",
+    "password.update.success.title": "Utente aggiornato correttamente",
+    "password.update.success.details": "Al termine dell'aggiornamento della password, l'utente sarà disconnesso",
+    "password.validate.invalid.title": "Password non corretta",
+    "userId.update.success.title": "Utente aggiornato correttamente",
+    "userId.update.success.details": "Al termine dell'aggiornamento dell'ID utente, l'utente sarà disconnesso",
+    "userId.update.invalid.title": "ID utente non valido",
+    "userId.update.invalid.details": "L'ID utente non è valido"
+  },
+  "downloads": {
+    "title": "I miei download",
+    "requestId": "ID richiesta",
+    "exportContext": "Descrizione",
+    "totalRecords": "Record totali",
+    "status": "Stato",
+    "createdTimeStamp": "Data obbligatoria",
+    "download": "Download",
+    "expiryDate": "Data di scadenza"
+  },
+  "menu": {
+    "applications": "Applicazioni",
+    "jump": "Passa a",
+    "help": "Guida",
+    "privacy": "Informativa sulla privacy",
+    "contactus": "Per contattarci"
+  },
+  "notification": {
+    "markAsRead": "Contrassegna come Letto",
+    "markAsUnread": "Contrassegna come Non letto",
+    "delete": "Elimina",
+    "emptyMessage": "Non sono presenti messaggi.",
+    "msgDetails": "Dettagli messaggio"
+  },
+  "responseMessage": {
+    "userPswdUpdatedSuccess": "Al termine dell'aggiornamento della password, l'utente sarà disconnesso.",
+    "usrUpdatedSuccess": "Utente aggiornato correttamente",
+    "severityError": "Errore",
+    "severitySuccuss": "Operazione completata."
+  },
+  "validationMessages": {
+    "userLoginId": {
+      "required": "L'ID utente è obbligatorio",
+      "exists": "L'ID utente esiste già nel sistema",
+      "pattern": "ID utente non valido",
+      "notMatched": "L'ID utente non corrisponde",
+      "pswdMatched": "ID utente e password non possono essere uguali"
+    },
+    "password": {
+      "required": "La password è obbligatoria",
+      "notMatched": "Le password non corrispondono",
+      "pswdPolicy": "La password inserita non corrisponde alle regole per le password"
+    },
+    "confirmPassword": {
+      "required": "La conferma della password è obbligatoria"
+    },
+    "firstName": {
+      "required": "Il nome è obbligatorio"
+    },
+    "lastName": {
+      "required": "Il cognome è obbligatorio"
+    },
+    "companyName": {
+      "required": "Il nome dell'azienda è obbligatorio"
+    },
+    "email": {
+      "required": "L'indirizzo di posta elettronica è obbligatorio",
+      "pattern": "Indirizzo di posta elettronica non valido"
+    },
+    "country": {
+      "required": "Il paese è obbligatorio"
+    },
+    "phone": {
+      "required": "Il telefono è obbligatorio"
+    },
+    "languageCode": {
+      "required": "La lingua è obbligatoria"
+    },
+    "timeZoneCode": {
+      "required": "Il fuso orario è obbligatorio"
+    },
+    "addressLine1": {
+      "required": "La riga indirizzo 1 è obbligatoria"
+    },
+    "state": {
+      "required": "Lo stato è obbligatorio"
+    },
+    "postalcode": {
+      "required": "Il codice postale è obbligatorio"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<div (click)="handleOnClick()" [ngClass]="hasContent ? '' : 'portal-group-header'" class="portal-tile-header">
+    <div class="portal-tile-header-icon">
+        <span *ngIf="tileHeader.iconImageSrc" class="ot-icon-lg" [ngStyle]="{background: 'url(' + tileHeader.iconImageSrc + ')',cursor: 'pointer'}"></span>
+    </div>
+    <div [ngClass]="hasContent ? 'portal-tile-title' : 'portal-tile-title portal-tile-header-text-align'">
+
+            <div *ngIf="!isSearchEnabled" [ngClass]="hasContent ? '' : 'portal-title-header-text-nocontent'" title="{{tileHeader.displayText}}" class="portal-title-header-text portal-title-display">{{tileHeader.displayText}}</div>
+
+        <!-- <ot-search *ngIf="tileHeader.searchEnabled" (onSearch)="handleOnSearch($event)" (isEnabled)="handleSearchEnableEvent($event)"></ot-search> -->
+    </div>
+</div>

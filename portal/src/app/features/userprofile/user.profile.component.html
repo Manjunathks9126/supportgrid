@@ -1,0 +1,34 @@
+<div class="{{isIframe==true?'portal-form-container-vh':'portal-form-container-perc'}}">
+    <!-- Body -->
+    <div class="portal-myprofile-container portal-modal-background" style="height: 36em;">
+        <div class="ot-row">
+            <div class="ot-col-xs-1 ot-col-sm-1 ot-col-md-1 ot-col-lg-1">
+                <div class="portal-profile-picture">
+                    <!--<div class="portal-userProfile-image"></div>-->
+                </div>
+                <!--<div class="portal-change-user-profile">{{'userprofile.updatepic'| translate}}</div>-->
+            </div>
+            <div class="ot-col-xs-11 ot-col-sm-11 ot-col-md-11 ot-col-lg-11">
+                <div class="portal-profile-content">
+                    <div class="ot-tab">
+                        <ul>
+                            <li>
+                                <a (click)="activeTab='account'"
+                                    [ngClass]="activeTab=='account'?'ot-active':''">{{'userprofile.tab.account'| translate}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ot-tab-content-container">
+                        <account *ngIf="activeTab=='account'"></account>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portal-panel-footer">
+     <div class="portal-panel-footer-button">
+            <button type="button" (click)="closeModal()" class="ot-secondary">{{'common.cancel'| translate}}</button>
+     </div>
+    </div>
+
+</div>

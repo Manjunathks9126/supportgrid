@@ -1,0 +1,198 @@
+{
+  "common": {
+    "project.title": "Project Neo",
+    "submit.title": "Senden",
+    "errorMessage": "Anfrage konnte nicht bearbeitet werden. Wenden Sie sich an den Support von GXS.",
+    "pageNotFound": "Die Seite wurde nicht gefunden. Wenden Sie sich an den OpenText-Support.",
+    "search": "Suchen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "submit": "Senden",
+    "close": "Schließen",
+    "refresh": "Aktualisieren"
+  },
+  "gpdMetric": {
+    "header": "Globales Partnerverzeichnis",
+    "partnerInGPD": "Partner in GPD",
+    "partnerInYourHub": "Partner in Ihrer Community",
+    "partnerAddedLastMonth": "Im letzten Monat hinzugefügte Partner"
+  },
+  "header": {
+    "title": "Trading Grid Online",
+    "signout": "Abmelden"
+  },
+  "body": {
+    "welcome": "Willkommen,",
+    "tileErrorMessage": "Inhalt kann nicht angezeigt werden.\nWenden Sie sich an den Support, um Unterstützung zu erhalten."
+  },
+  "logout": {
+    "signout": "Abmelden",
+    "confirmation.message": "Von TGO abmelden?",
+    "confirmation.yes": "Ja",
+    "confirmation.no": "Nein"
+  },
+  "forgotpassword": {
+    "header.title": "Schritte zum Zurücksetzen des vergessenen Kennworts:",
+    "steps.step1": "1. Geben Sie Ihren Benutzernamen ein.",
+    "steps.step2": "2. Anschließend werden Sie aufgefordert, Ihre zwei Sicherheitsfragen zu beantworten.",
+    "steps.step3": "3. Nach der erfolgreichen Beantwortung der Fragen wird ein temporäres Kennwort generiert und per E-Mail an Ihre ID gesendet.",
+    "questions.title": "Schritt 1 von 3 zum Zurücksetzen des vergessenen Kennworts:",
+    "questions.username": "Benutzername:",
+    "questions.note": "Zum Generieren eines temporären Kennworts folgende Fragen beantworten",
+    "questions.step2": "Schritt 2 von 3 zum Zurücksetzen des vergessenen Kennworts:",
+    "questions.cancel": "Abbrechen"
+  },
+  "pattern": {
+    "email": "^[\\_A-Za-z0-9\\-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",
+    "emailValidate": "Gültige E-Mail-Adresse eingeben",
+    "phoneValidate": "Gültige Telefonnummer eingeben"
+  },
+  "footer": {
+    "copyRight": "Copyright © {{currentYear}} Open Text. Alle Rechte vorbehalten."
+  },
+  "formFields": {
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "addLine1": "Adresszeile 1",
+    "addLine2": "Adresszeile 2",
+    "CompanyName": "Firmenname",
+    "Email": "E-Mail-Adresse",
+    "City": "Ort",
+    "State": "Bundesstaat/Provinz/Region",
+    "Phone": "Telefon",
+    "Mobile": "Mobil",
+    "PostalCode": "Postleitzahl",
+    "Country": "Land",
+    "Fax": "Fax",
+    "Alternate": "Alternativ",
+    "UserId": "Benutzer-ID",
+    "password": "Kennwort",
+    "confPaswd": "Kennwort bestätigen",
+    "pwdPolicyHeader": "Ihr Kennwort sollte die folgenden Regeln berücksichtigen:",
+    "pwdPolicyLink": "Kennwortrichtlinie",
+    "Facebook": "Facebook",
+    "LinkedIn": "LinkedIn",
+    "Twitter": "Twitter",
+    "Other": "Andere",
+    "language": "Bevorzugte Sprache",
+    "timezone": "Zeitzone",
+    "dateFormat": "Datumsformat",
+    "dayLightSaving": "Sommerzeit beachten?",
+    "isMarketingMaterial": "Ich möchte OpenText-Marketingmaterialien erhalten.",
+    "emailNotificationInfo": "E-Mail-Adresse wird für Portalbenachrichtigungen und Kennwortzurücksetzungen verwendet."
+  },
+  "userprofile": {
+    "title": "Mein Profil",
+    "downloads": "Meine Downloads",
+    "updatepic": "Ihr Bild aktualisieren",
+    "userID": "Benutzer-ID",
+    "tab.account": "Konto",
+    "tab.preferences": "Voreinstellungen",
+    "account.created": "Erstellt am",
+    "account.lastLogon": "Letzte Anmeldung",
+    "account.privacyPolicy": "Datenschutzrichtlinie",
+    "account.consentCause": "Einwilligungsklausel",
+    "account.consentCause.helpText": "Ich willige ein, dass meine Kontaktinformationen (Name, E-Mail-Adresse, Telefonnummer) den Partnern angezeigt werden, mit denen ich über diese Website interagiere.",
+    "account.userRoles": "Benutzerrolle(n)",
+    "account.preferences": "Voreinstellungen",
+    "account.changepassword": "Kennwort oder Benutzer-ID ändern",
+    "account.error.postalcode": "Ungültige Postleitzahl",
+    "account.error.mobile": "Ungültiges Format",
+    "password.disclimar": "Sie können Ihre Benutzer-ID, Ihr Kennwort oder beides ändern. Geben Sie Ihr aktuelles Kennwort ein, um den Vorgang fortzusetzen.",
+    "password.current.label": "Aktuelles Kennwort eingeben",
+    "password.change.label": "Kennwort ändern",
+    "password.new.label": "Neues Kennwort",
+    "password.reenter.label": "Neues Kennwort erneut eingeben",
+    "password.change.user.label": "Benutzer-ID ändern",
+    "password.current.user.label": "Neue Benutzer-ID",
+    "password.new.user.label": "Neue Benutzer-ID erneut eingeben",
+    "password.update.success.title": "Benutzer erfolgreich aktualisiert",
+    "password.update.success.details": "Nach der erfolgreichen Aktualisierung Ihres Kennworts werden Sie abgemeldet",
+    "password.validate.invalid.title": "Falsches Kennwort",
+    "userId.update.success.title": "Benutzer erfolgreich aktualisiert",
+    "userId.update.success.details": "Nach der erfolgreichen Aktualisierung Ihrer Benutzer-ID werden Sie abgemeldet",
+    "userId.update.invalid.title": "Ungültige Benutzer-ID",
+    "userId.update.invalid.details": "Benutzer-ID ist ungültig"
+  },
+  "downloads": {
+    "title": "Meine Downloads",
+    "requestId": "Anforderungs-ID",
+    "exportContext": "Beschreibung",
+    "totalRecords": "Datensätze gesamt",
+    "status": "Status",
+    "createdTimeStamp": "Anforderungsdatum",
+    "download": "Herunterladen",
+    "expiryDate": "Ablaufdatum"
+  },
+  "menu": {
+    "applications": "Anwendungen",
+    "jump": "Springen zu",
+    "help": "Hilfe",
+    "privacy": "Datenschutzrichtlinie",
+    "contactus": "Kontakt"
+  },
+  "notification": {
+    "markAsRead": "Als gelesen markieren",
+    "markAsUnread": "Als ungelesen markieren",
+    "delete": "Löschen",
+    "emptyMessage": "Es liegen keine Nachrichten vor.",
+    "msgDetails": "Nachrichtendetails"
+  },
+  "responseMessage": {
+    "userPswdUpdatedSuccess": "Nach der erfolgreichen Aktualisierung Ihres Kennworts werden Sie abgemeldet.",
+    "usrUpdatedSuccess": "Benutzer erfolgreich aktualisiert",
+    "severityError": "Fehler",
+    "severitySuccuss": "Erfolgreich!"
+  },
+  "validationMessages": {
+    "userLoginId": {
+      "required": "Benutzer-ID ist erforderlich",
+      "exists": "Benutzer-ID ist bereits im System vorhanden",
+      "pattern": "Benutzer-ID ist ungültig",
+      "notMatched": "Benutzer-ID stimmt nicht überein",
+      "pswdMatched": "Benutzer-ID, Kennwort kann nicht identisch sein"
+    },
+    "password": {
+      "required": "Kennwort ist erforderlich",
+      "notMatched": "Kennwörter stimmen nicht überein",
+      "pswdPolicy": "Das eingegebene Kennwort verstößt gegen die Kennwortrichtlinie"
+    },
+    "confirmPassword": {
+      "required": "Kennwort bestätigen ist erforderlich"
+    },
+    "firstName": {
+      "required": "„Vorname“ ist ein Pflichtfeld"
+    },
+    "lastName": {
+      "required": "„Nachname“ ist ein Pflichtfeld"
+    },
+    "companyName": {
+      "required": "Firmenname ist erforderlich"
+    },
+    "email": {
+      "required": "E-Mail ist erforderlich",
+      "pattern": "E-Mail ist ungültig"
+    },
+    "country": {
+      "required": "„Land“ ist ein Pflichtfeld"
+    },
+    "phone": {
+      "required": "Telefon ist erforderlich"
+    },
+    "languageCode": {
+      "required": "Sprache ist erforderlich"
+    },
+    "timeZoneCode": {
+      "required": "Zeitzone ist erforderlich"
+    },
+    "addressLine1": {
+      "required": "Adresszeile 1 ist erforderlich"
+    },
+    "state": {
+      "required": "„Bundesstaat“ ist ein Pflichtfeld"
+    },
+    "postalcode": {
+      "required": "Postleitzahl ist erforderlich"
+    }
+  }
+}

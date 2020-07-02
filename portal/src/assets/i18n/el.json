@@ -1,0 +1,198 @@
+{
+  "common": {
+    "project.title": "Project Neo",
+    "submit.title": "Submit",
+    "errorMessage": "The request could not be processed. Please contact OpenText support.",
+    "pageNotFound": "Page not found. Please contact OpenText support.",
+    "search": "Search",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "close": "Close",
+    "refresh": "Refresh"
+  },
+  "gpdMetric": {
+    "header": "Global Partner Directory",
+    "partnerInGPD": "Partners in GPD",
+    "partnerInYourHub": "Partners in your community",
+    "partnerAddedLastMonth": "Partners added last month"
+  },
+  "header": {
+    "title": "Trading Grid Online",
+    "signout": "Sign out"
+  },
+  "body": {
+    "welcome": "Welcome,",
+    "tileErrorMessage": "Unable to display content.\nPlease contact Support for assistance."
+  },
+  "logout": {
+    "signout": "Sign out",
+    "confirmation.message": "Do you want to sign out of SupportGrid?",
+    "confirmation.yes": "Yes",
+    "confirmation.no": "No"
+  },
+  "forgotpassword": {
+    "header.title": "Forgotten Password Reset Steps:",
+    "steps.step1": "1. Please Enter your User name",
+    "steps.step2": "2. You will then be asked to answer your two security questions",
+    "steps.step3": "3. Upon successfully answering the questions we will generate a temporary password for you and email it to your id.",
+    "questions.title": "Forgotten Password Reset Step 1 of 3:",
+    "questions.username": "User name:",
+    "questions.note": "Please answer the following questions to allow us to generate a temporary password for you",
+    "questions.step2": "Forgotten Password Reset Step 2 of 3:",
+    "questions.cancel": "Cancel"
+  },
+  "pattern": {
+    "email": "^[\\_A-Za-z0-9\\-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",
+    "emailValidate": "Enter a valid email address",
+    "phoneValidate": "Enter a valid phone number"
+  },
+  "footer": {
+    "copyRight": "Copyright © {{currentYear}} Open Text. All Rights Reserved."
+  },
+  "formFields": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "addLine1": "Address Line 1",
+    "addLine2": "Address Line 2",
+    "CompanyName": "Company Name",
+    "Email": "Email Address",
+    "City": "City/Town",
+    "State": "State/Province/Region",
+    "Phone": "Phone",
+    "Mobile": "Mobile",
+    "PostalCode": "Postal Code",
+    "Country": "Country",
+    "Fax": "Fax",
+    "Alternate": "Alternate",
+    "UserId": "User ID",
+    "password": "Password",
+    "confPaswd": "Confirm Password",
+    "pwdPolicyHeader": "Your password should reflect the following rules:",
+    "pwdPolicyLink": "Password Policy",
+    "Facebook": "Facebook",
+    "LinkedIn": "LinkedIn",
+    "Twitter": "Twitter",
+    "Other": "Other",
+    "language": "Preferred Language",
+    "timezone": "Time Zone",
+    "dateFormat": "Date Format",
+    "dayLightSaving": "Observe Daylight Savings?",
+    "isMarketingMaterial": "I would like to receive OpenText marketing materials",
+    "emailNotificationInfo": "Email address will be used for portal notifications and password resets."
+  },
+  "userprofile": {
+    "title": "My Profile",
+    "downloads": "My Downloads",
+    "updatepic": "Update your picture",
+    "userID": "User ID",
+    "tab.account": "Account",
+    "tab.preferences": "Preferences",
+    "account.created": "Created on",
+    "account.lastLogon": "Last Logon",
+    "account.privacyPolicy": "Privacy Policy",
+    "account.consentCause": "Consent clause",
+    "account.consentCause.helpText": "I give my permission to make my contact information (name, email, phone) visible to the partners with whom my company has agreed to transact via the OpenText Trading Grid<sup>TM</sup> platform.",
+    "account.userRoles": "User Role(s)",
+    "account.preferences": "Preferences",
+    "account.changepassword": "Change Password or User ID",
+    "account.error.postalcode": "Invalid Postal Code",
+    "account.error.mobile": "Invalid format",
+    "password.disclimar": "You can change your User ID, Password or both. Please enter your current password to proceed further.",
+    "password.current.label": "Enter current password",
+    "password.change.label": "Change Password",
+    "password.new.label": "New Password",
+    "password.reenter.label": "Re-enter new password",
+    "password.change.user.label": "Change User ID",
+    "password.current.user.label": "New User ID",
+    "password.new.user.label": "Re-enter new User ID",
+    "password.update.success.title": "User successfully updated",
+    "password.update.success.details": "You will be logged out once your password is successfully updated",
+    "password.validate.invalid.title": "Incorrect Password",
+    "userId.update.success.title": "User successfully updated",
+    "userId.update.success.details": "You will be logged out once your user ID is successfully updated",
+    "userId.update.invalid.title": "Invalid User ID",
+    "userId.update.invalid.details": "User ID is not valid"
+  },
+  "downloads": {
+    "title": "My Downloads",
+    "requestId": "Request ID",
+    "exportContext": "Description",
+    "totalRecords": "Total Records",
+    "status": "Status",
+    "createdTimeStamp": "Date Requested",
+    "download": "Download",
+    "expiryDate": "Expiration Date"
+  },
+  "menu": {
+    "applications": "Applications",
+    "jump": "Jump to",
+    "help": "Help",
+    "privacy": "Privacy Policy",
+    "contactus": "Contact Us"
+  },
+  "notification": {
+    "markAsRead": "Mark as Read",
+    "markAsUnread": "Mark as Unread",
+    "delete": "Delete",
+    "emptyMessage": "You have no messages.",
+    "msgDetails": "Message Details"
+  },
+  "responseMessage": {
+    "userPswdUpdatedSuccess": "You will be logged out once your password is successfully updated.",
+    "usrUpdatedSuccess": "User successfully updated",
+    "severityError": "Error",
+    "severitySuccuss": "Success!"
+  },
+  "validationMessages": {
+    "userLoginId": {
+      "required": "User ID is required",
+      "exists": "User ID already exists in system",
+      "pattern": "User ID is Invalid",
+      "notMatched": "User ID do not match",
+      "pswdMatched": "User ID, Password cannot be same"
+    },
+    "password": {
+      "required": "Password is required",
+      "notMatched": "Passwords do not match",
+      "pswdPolicy": "The entered password is not as per password policy"
+    },
+    "confirmPassword": {
+      "required": "Confirm Password is required"
+    },
+    "firstName": {
+      "required": "First Name is required"
+    },
+    "lastName": {
+      "required": "Last Name is required"
+    },
+    "companyName": {
+      "required": "Company Name is required"
+    },
+    "email": {
+      "required": "Email is required",
+      "pattern": "Email is Invalid"
+    },
+    "country": {
+      "required": "Country is required"
+    },
+    "phone": {
+      "required": "Phone is required"
+    },
+    "languageCode": {
+      "required": "Language is required"
+    },
+    "timeZoneCode": {
+      "required": "Timezone is required"
+    },
+    "addressLine1": {
+      "required": "Address Line 1 is required"
+    },
+    "state": {
+      "required": "State is required"
+    },
+    "postalcode": {
+      "required": "Postal Code is required"
+    }
+  }
+}

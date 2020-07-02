@@ -1,0 +1,62 @@
+<div (click)="openMessageDrawer()">
+    <span [ngClass]="showContent ? 'portal-header-msg-icon-pos portal-message-icon active':'portal-header-msg-icon-pos portal-message-icon'">
+    </span>
+    <div class="portal-header-msg-icon-pos portal-notification-count" *ngIf="msgCount != 0">{{msgCount}}</div>
+</div>
+
+<div class="portal-message-list-content" [@slideInOut]="showContent? 'in' : 'out'">
+    <div class="portal-loader-wrapper" [hidden]="loaderStatus">
+        <div class="portal-message-loader">
+            <div class="portal-loader-anim"></div>
+        </div>
+    </div>
+    <div class="portal-msg-category-sidebar" #categoryBtnList>
+        <button type="button" *ngFor="let msgCategory of messageCategoryList;  let i = index" title="{{msgCategory.msgCategory}}" tabindex="{{showContent?1000+i:-1}}" (click)="loadMessages(msgCategory.msgCategoryId)" [ngClass]="i == 0?'portal-sidebar-categ-wrapper active':'portal-sidebar-categ-wrapper'">
+      <div class="portal-default ot-sidebar-{{msgCategory.msgCategoryKey}}" tabindex="{{showContent?1000+i:-1}}">
+
+      </div>
+      <div class="portal-sidebar-categ-count" *ngIf="msgCategory.newMsgCount > 0" tabindex="{{showContent?1000+i:-1}}"> {{msgCategory.newMsgCount}}</div>
+    </button>
+    </div>
+
+
+    <div class="portal-messageListHeader">
+        <div [hidden]="selectedMsg?.length > 0 ? false:true">
+            <div class="portal-msg-header portal-link-markAsRead" (click)="markAs('READ')">{{'notification.markAsRead'| translate}}</div>
+            <div class="portal-msg-header portal-link-markAsUnRead" (click)="markAs('NEW')">{{'notification.markAsUnread'| translate}}</div>
+            <div class="portal-msg-header portal-link-delete" (click)="markAs('DELETE')">{{'notification.delete'| translate}}</div>
+        </div>
+        <div class="portal-messageList-close-btn" (click)="showContent=!showContent;"></div>
+    </div>
+
+    <div class="portal-msg-container-wrp" [perfectScrollbar]="psConfig">
+        <div *ngIf="messagesList?.length > 0 else emptyMsg" #messageTile>
+            <div *ngFor="let message of messagesList">
+                <div id="msg-tile-{{message.msgId}}" class="{{message.userMsgStatus != 'NEW' ? 'portal-notification-tile portal-message-read' : 'portal-notification-tile portal-message-new'}}">
+                    <ot-checkbox name="group2" tabindex=-1 [(ngModel)]="selectedMsg" name="msg" [disableLabelEvent]="false" value="{{message.msgId}}" label="{{message?.msgTitle}}" class="portal-message-title" (click)="openMessage($event,message,message.userMsgStatus)"></ot-checkbox>
+
+                    <div class="portal-msg-tile-meta">
+                        <div class="portal-msg-meta-source">{{message.msgCreatedBy}}</div>
+                        <div class="portal-msg-meta-date">{{message.msgCreateDate | otDateTimePipe :'mm:dd:yy hh:mm:ss'}}</div>
+                    </div>
+                    <div class="portal-notification-snippet" [innerHTML]="message?.msgContent"></div>
+                </div>
+            </div>
+        </div>
+        <ng-template #emptyMsg>
+            <div class="portal-empty-notification">{{'notification.emptyMessage'| translate}}</div>
+        </ng-template>
+    </div>
+</div>
+
+<div class="portal-message-details" [@slideInOut]="showMessageDetailFlag? 'in':'out'">
+    <div class="ot-messageListHeader portal-msgDetails">
+        <div style="float:left">{{'notification.msgDetails'| translate}}</div>
+        <div class="portal-messageList-close-btn" (click)="closeMessageDetail()" id="messageDetailViewClose"></div>
+    </div>
+    <div class="portal-message-detail-wrp" [perfectScrollbar]="psConfig">
+        <div style="background-color:white;" [innerHTML]="messageDetails"> </div>
+    </div>
+</div>
+
+<!-- class="{{msgCategory.msg_category_key === getClass(msgCategory.msg_category_key) ? 'ot-sidebar-categ-wrapper':'portal-sidebar-default-icon'}} " -->

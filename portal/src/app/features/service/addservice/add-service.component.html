@@ -1,0 +1,95 @@
+<div class="portal-account-wrapper">
+  <div class="ot-row">
+    <div class="ot-col-sm-12 ot-col-md-12 ot-col-lg-12 ot-col-xl-12">
+      <div class="account-rigth-usr-info">
+        <form [formGroup]="rForm">
+          <div id="usr-form" class="collapse in">
+            <div class="ot-row">
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label
+                    class="ot-form-control-label portal-label-inline ot-required">{{'sgservice.servicename' | translate}}</label>
+                  <input type="text" tabindex="1" [ngClass]="!rForm.controls['serviceName'].valid && rForm.controls['serviceName'].touched ? 'ot-error':'ot-text nonEdit'"
+                         formControlName="serviceName" maxlength="100">
+                  <div *ngIf="!rForm.controls['serviceName'].valid && rForm.controls['serviceName'].touched">
+                    <div class="ot-error">{{'validationMessages.serviceName.required'|translate}}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label ot-required">{{'sgservice.displayName' | translate}}</label>
+                  <input type="text" tabindex="2" formControlName="displayName" maxlength="100" [ngClass]="!rForm.controls['displayName'].valid && rForm.controls['displayName'].touched ? 'ot-error':'ot-text nonEdit'">
+                  <div *ngIf="!rForm.controls['displayName'].valid && rForm.controls['displayName'].touched">
+                    <div class="ot-error">{{'validationMessages.serviceDisplayName.required'|translate}}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label portal-label-inline ot-required">{{'sgservice.serviceDesc' | translate}}</label>
+                  <input type="text" tabindex="3" [ngClass]="!rForm.controls['description'].valid && rForm.controls['description'].touched ? 'ot-error':'ot-text'"
+                         formControlName="description" maxlength="150">
+                  <div *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">
+                       <div class="ot-error">{{'validationMessages.description.required'|translate}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ot-row">
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label portal-label-inline ot-required">{{'sgservice.serviceURI' | translate}}</label>&nbsp;
+                  <input type="text" tabindex="4" [ngClass]="!rForm.controls['serviceUrl'].valid && rForm.controls['serviceUrl'].touched ? 'ot-error':'ot-text'" formControlName="serviceUrl" maxlength="200">
+                  <div *ngIf="!rForm.controls['serviceUrl'].valid && rForm.controls['serviceUrl'].touched && rForm.controls['serviceUrl'].errors && rForm.controls['serviceUrl'].errors.required ">
+                    <div class="ot-error">{{'validationMessages.serviceUri.required'|translate}}</div>
+                  </div>
+                </div>
+              </div>
+
+
+                <div class="ot-col-md-4">
+                  <div class="ot-form-group">
+                    <label class="ot-form-control-label portal-label-inline ot-required">{{'sgservice.roleGroup' | translate}}</label>&nbsp;
+                    <span tooltip="{{'sgservice.roleNotification'|translate}}" class="portal-notification-info-icon "></span>
+                    <input type="text" tabindex="5" [ngClass]="!rForm.controls['roleName'].valid && rForm.controls['roleName'].touched || !isValid ? 'ot-error':'ot-text'" formControlName="roleName" (change)="validateRoleName()">
+                    <div *ngIf="!rForm.controls['roleName'].valid && rForm.controls['roleName'].touched && rForm.controls['roleName'].errors && rForm.controls['roleName'].errors.required ">
+                      <div class="ot-error">{{'validationMessages.userRole.required'|translate}}</div>
+                    </div>
+                    <div *ngIf="!isValid">
+                      <div class="ot-error" *ngIf="!isValid">{{'validationMessages.roleValidate.valid'|translate}}</div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label portal-label-inline ot-required">{{'sgservice.roleGroup' | translate}}</label>
+                  <ot-multi-select [options]="serviceRoleGroups" optionLabel="roleName"
+                   formControlName="userRole" class="ot-text"></ot-multi-select>
+                  <div *ngIf="!rForm.controls['userRole'].valid && rForm.controls['userRole'].touched && rForm.controls['userRole'].errors">
+                    <div  class="ot-error">{{'validationMessages.userRole.required'|translate}}</div>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="ot-col-md-4">
+                <div class="ot-form-group">
+                  <label class="ot-form-control-label ">{{'sgservice.tileIcon' | translate}}</label>
+                  <input type="text" tabindex="4" [ngClass]="!rForm.controls['tileIcon'].valid && rForm.controls['tileIcon'].touched ? 'ot-error':'ot-text'"
+                         formControlName="tileIcon" maxlength="200">
+                  <div *ngIf="!rForm.controls['tileIcon'].valid && rForm.controls['tileIcon'].touched">
+                    <div class="ot-error">{{'validationMessages.tileIcon.required'|translate}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

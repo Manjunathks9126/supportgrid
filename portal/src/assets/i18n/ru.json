@@ -1,0 +1,198 @@
+{
+  "common": {
+    "project.title": "Project Neo",
+    "submit.title": "Отправить",
+    "errorMessage": "Не удалось обработать запрос. Обратитесь в службу поддержки OpenText.",
+    "pageNotFound": "Страница не найдена. Обратитесь в службу поддержки OpenText.",
+    "search": "Поиск",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "submit": "Отправить",
+    "close": "Закрыть",
+    "refresh": "Обновить"
+  },
+  "gpdMetric": {
+    "header": "Глобальный каталог партнеров",
+    "partnerInGPD": "Партнеры в GPD",
+    "partnerInYourHub": "Партнеры в вашем сообществе",
+    "partnerAddedLastMonth": "Партнеры, добавленные в прошлом месяце"
+  },
+  "header": {
+    "title": "Trading Grid Online",
+    "signout": "Выход"
+  },
+  "body": {
+    "welcome": "Добро пожаловать,",
+    "tileErrorMessage": "Не удалось отобразить содержимое.\nОбратитесь за помощью в службу поддержки."
+  },
+  "logout": {
+    "signout": "Выход",
+    "confirmation.message": "Выйти из TGO?",
+    "confirmation.yes": "Да",
+    "confirmation.no": "Нет"
+  },
+  "forgotpassword": {
+    "header.title": "Шаги по сбросу забытого пароля:",
+    "steps.step1": "1. Введите свое имя пользователя.",
+    "steps.step2": "2. Ответьте на два контрольных вопроса.",
+    "steps.step3": "3. Если вы успешно ответите на вопросы, мы создадим для вас временный пароль и отправим на ваш адрес электронной почты.",
+    "questions.title": "Сброс забытого пароля, шаг 1 из 3:",
+    "questions.username": "Имя пользователя:",
+    "questions.note": "Ответьте на следующие вопросы, чтобы мы могли создать для вас временный пароль",
+    "questions.step2": "Сброс забытого пароля, шаг 2 из 3:",
+    "questions.cancel": "Отмена"
+  },
+  "pattern": {
+    "email": "^[\\_A-Za-z0-9\\-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",
+    "emailValidate": "Введите допустимый адрес электронной почты",
+    "phoneValidate": "Введите допустимый номер телефона"
+  },
+  "footer": {
+    "copyRight": "© Open Text, {{currentYear}} г. Все права защищены."
+  },
+  "formFields": {
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "addLine1": "Строка адреса 1",
+    "addLine2": "Строка адреса 2",
+    "CompanyName": "Название компании",
+    "Email": "Адрес электронной почты",
+    "City": "Город",
+    "State": "Штат/провинция/регион",
+    "Phone": "Телефон",
+    "Mobile": "Мобильный телефон",
+    "PostalCode": "Почтовый индекс",
+    "Country": "Страна",
+    "Fax": "Факс",
+    "Alternate": "Другое",
+    "UserId": "ID пользователя",
+    "password": "Пароль",
+    "confPaswd": "Подтверждение пароля",
+    "pwdPolicyHeader": "Пароль должен соответствовать следующим правилам:",
+    "pwdPolicyLink": "Политика паролей",
+    "Facebook": "Facebook",
+    "LinkedIn": "LinkedIn",
+    "Twitter": "Twitter",
+    "Other": "Другое",
+    "language": "Предпочтительный язык",
+    "timezone": "Часовой пояс",
+    "dateFormat": "Формат даты",
+    "dayLightSaving": "Учитывать летнее время?",
+    "isMarketingMaterial": "Я хочу получать маркетинговые материалы OpenText",
+    "emailNotificationInfo": "Адрес электронной почты будет использоваться для уведомлений портала и сброса пароля."
+  },
+  "userprofile": {
+    "title": "Мой профиль",
+    "downloads": "Мои загрузки",
+    "updatepic": "Обновить фотографию",
+    "userID": "ID пользователя",
+    "tab.account": "Учетная запись",
+    "tab.preferences": "Настройки",
+    "account.created": "Дата создания",
+    "account.lastLogon": "Последний вход",
+    "account.privacyPolicy": "Политика конфиденциальности",
+    "account.consentCause": "Согласие",
+    "account.consentCause.helpText": "Я даю свое разрешение на то, чтобы мои контактные данные (имя, адрес электронной почты, телефон) были видны партнерам, с которыми я осуществляю транзакции через этот веб-сайт.",
+    "account.userRoles": "Роли пользователя",
+    "account.preferences": "Настройки",
+    "account.changepassword": "Изменить пароль или ID пользователя",
+    "account.error.postalcode": "Недопустимый почтовый индекс",
+    "account.error.mobile": "Недопустимый формат",
+    "password.disclimar": "Вы можете изменить ID пользователя или пароль. Введите текущий пароль, чтобы продолжить.",
+    "password.current.label": "Введите текущий пароль",
+    "password.change.label": "Изменить пароль",
+    "password.new.label": "Новый пароль",
+    "password.reenter.label": "Повторно введите новый пароль",
+    "password.change.user.label": "Изменить ID пользователя",
+    "password.current.user.label": "Новый ID пользователя",
+    "password.new.user.label": "Повторно введите новый ID пользователя",
+    "password.update.success.title": "Пользователь успешно обновлен",
+    "password.update.success.details": "После успешного обновления пароля вы выйдете из системы",
+    "password.validate.invalid.title": "Неправильный пароль",
+    "userId.update.success.title": "Пользователь успешно обновлен",
+    "userId.update.success.details": "После успешного обновления ID пользователя вы выйдете из системы",
+    "userId.update.invalid.title": "Недопустимый ID пользователя",
+    "userId.update.invalid.details": "Указан недопустимый ID пользователя"
+  },
+  "downloads": {
+    "title": "Мои загрузки",
+    "requestId": "ID запроса",
+    "exportContext": "Описание",
+    "totalRecords": "Всего записей",
+    "status": "Статус",
+    "createdTimeStamp": "Дата запроса",
+    "download": "Загрузить",
+    "expiryDate": "Дата окончания действия"
+  },
+  "menu": {
+    "applications": "Применение",
+    "jump": "Перейти к",
+    "help": "Справка",
+    "privacy": "Политика конфиденциальности",
+    "contactus": "Свяжитесь с нами"
+  },
+  "notification": {
+    "markAsRead": "Пометить как прочитанное",
+    "markAsUnread": "Пометить как непрочитанное",
+    "delete": "Удалить",
+    "emptyMessage": "У вас нет сообщений.",
+    "msgDetails": "Сведения о сообщении"
+  },
+  "responseMessage": {
+    "userPswdUpdatedSuccess": "После успешного обновления пароля вы выйдете из системы.",
+    "usrUpdatedSuccess": "Пользователь успешно обновлен",
+    "severityError": "Ошибка",
+    "severitySuccuss": "Успешно!"
+  },
+  "validationMessages": {
+    "userLoginId": {
+      "required": "Необходимо указать ID пользователя",
+      "exists": "ID пользователя уже существует в системе",
+      "pattern": "Недопустимый ID пользователя",
+      "notMatched": "ID пользователя не совпадает",
+      "pswdMatched": "Пароль и ID пользователя не могут быть одинаковыми"
+    },
+    "password": {
+      "required": "Необходимо указать пароль",
+      "notMatched": "Пароли не совпадают",
+      "pswdPolicy": "Введенный пароль не отвечает политике паролей"
+    },
+    "confirmPassword": {
+      "required": "Необходимо ввести подтверждение пароля"
+    },
+    "firstName": {
+      "required": "Необходимо указать имя"
+    },
+    "lastName": {
+      "required": "Необходимо указать фамилию"
+    },
+    "companyName": {
+      "required": "Необходимо указать название компании"
+    },
+    "email": {
+      "required": "Необходимо указать адрес электронной почты",
+      "pattern": "Недопустимый адрес электронной почты"
+    },
+    "country": {
+      "required": "Необходимо указать страну"
+    },
+    "phone": {
+      "required": "Необходимо указать телефон"
+    },
+    "languageCode": {
+      "required": "Необходимо указать язык"
+    },
+    "timeZoneCode": {
+      "required": "Необходимо указать часовой пояс"
+    },
+    "addressLine1": {
+      "required": "Необходимо указать строку адреса 1"
+    },
+    "state": {
+      "required": "Необходимо указать штат"
+    },
+    "postalcode": {
+      "required": "Необходимо указать почтовый индекс"
+    }
+  }
+}
