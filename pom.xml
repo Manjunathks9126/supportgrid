@@ -19,7 +19,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<aspectj.version>1.8.1</aspectj.version>
-		<fasterxml.version>2.9.5</fasterxml.version>
+		<fasterxml.version>2.12.1</fasterxml.version>
 		<start-class>com.ot.portal.PortalApplication</start-class>
         <hibernate.version>5.2.12.Final</hibernate.version>
         <springframework.version>5.0.6.RELEASE</springframework.version>
